@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advice App Generator</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a class = "advice-no" id="number" alt="advice number">ADVICE #</a>
+        <p class = "advice" id="result" alt="advice"></p>
+
+
+        <img class = "mobile-div" alt="Pattern Display" src = "images/pattern-divider-mobile.svg">
+        <img class = "desk-div" alt="Pattern Display" src = "images/pattern-divider-desktop.svg">
+
+        <button class= "circle" onclick="fetchAdvice()">
+            <img class = "dice" id="getData" src="images/icon-dice.svg" alt="Dice Icon">
+        </button>
+    </div>
+</body>
+</html>
