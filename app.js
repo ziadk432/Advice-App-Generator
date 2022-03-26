@@ -1,3 +1,8 @@
+const clear = async() =>{
+    document.getElementById('result').innerHTML = `                                                                                                                                                                     `
+}
+
+
 const fetchAdvice = async() => {
     const res = await fetch("https://api.adviceslip.com/advice")
     const data = await res.json();
@@ -9,4 +14,10 @@ const fetchAdvice = async() => {
 }
 
 fetchAdvice();
+clear();
 
+
+const use = async() =>{
+    clear();
+    fetchAdvice();
+}
